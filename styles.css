@@ -1,3 +1,5 @@
+/* External CSS file: styles.css */
+
 .bg-light-blue {
     background-color: #00B4D8;
 }
@@ -33,7 +35,6 @@ body {
     font-size: 4rem;
     color: #023e8a;
     margin-bottom: 2rem;
-
 }
 
 #nama {
@@ -199,7 +200,7 @@ a:hover {
     margin-bottom: 2rem;
 }
 
-#itsupport{
+#itsupport {
     display: flex;
     flex-direction: column;
     justify-content: center;
