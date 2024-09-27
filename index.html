@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -48,7 +48,10 @@
             <a href="https://sman4tangsel.sch.id/index.html" target="_blank"><h5 class="card-title">SMAN 4 KOTA TANGERANG SELATAN</h5></a>
             <p class="card-text">JURUSAN ILMU PENGETAHUAN ALAM</p>
             <p class="card-text"><em>2020-2023</em></p>
-            <p><b>EXPERIENCE:</b> Menjabat sebagai anggota BPH di divisi sekretaris dalam Ekstrakurikuler Sinematografi Periode 2022-2023</p>
+            <p><b>EXPERIENCE:</b></p>
+            <ul>
+              <li>Menjabat sebagai anggota BPH di divisi sekretaris dalam Ekstrakurikuler Sinematografi Periode 2022-2023</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -124,6 +127,18 @@
     <p>©2024 Hakim</p>
   </footer>
 
+  <!-- Smooth Scrolling JavaScript -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+          </html>
