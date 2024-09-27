@@ -1,148 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdurrahman Hakim Makarim</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan dengan file CSS eksternal -->
+  <link rel="stylesheet" href="styles.css"> <!-- Link ke CSS eksternal -->
 </head>
 <body>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light-blue">
-  <div class="container">
-    <img id="logo" src="namagw.jpg" width="30px" class="rounded me-2" alt="Logo">
-    <a class="navbar-brand" href="#">HAKIM</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#job">Job</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+  <nav class="navbar">
+    <div class="container">
+      <img id="logo" src="namagw.jpg" width="30px" class="logo" alt="Logo">
+      <a class="navbar-brand" href="#">HAKIM</a>
+      <ul class="navbar-nav">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#job">Job</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="text-center">
+    <h1 class="main-heading">Halo, saya <span id="nama">Abdurrahman Hakim Makarim</span></h1>
+    <p id="biodata">
+      Saya adalah mahasiswa Informatika di Universitas Pembangunan Jaya yang fokus di bidang IT support. Saya memiliki minat dalam membantu organisasi dengan infrastruktur teknis, menyelesaikan masalah, dan menyediakan solusi teknologi yang efisien. Dengan terus belajar dan mengasah keterampilan, saya berkomitmen memberikan solusi IT yang andal untuk mendukung operasional bisnis berjalan lancar.
+    </p>
+  </div>
+
+  <div class="section" id="education">
+    <h2>Education</h2>
+    <div class="education-item">
+      <a href="https://sman4tangsel.sch.id/index.html" target="_blank"><h3>SMAN 4 KOTA TANGERANG SELATAN</h3></a>
+      <p>JURUSAN ILMU PENGETAHUAN ALAM</p>
+      <p><em>2020-2023</em></p>
+      <p><strong>EXPERIENCE:</strong> Menjabat sebagai anggota BPH di divisi sekretaris dalam Ekstrakurikuler Sinematografi Periode 2022-2023</p>
+    </div>
+
+    <hr>
+
+    <div class="education-item">
+      <a href="https://portal.upj.ac.id/" target="_blank"><h3>UNIVERSITAS PEMBANGUNAN JAYA</h3></a>
+      <p>PROGRAM STUDI INFORMATIKA</p>
+      <p><em>2023-2027</em></p>
+      <p><strong>EXPERIENCE:</strong></p>
+      <ul>
+        <li>Anggota Asisten Laboratorium Program Studi Informatika</li>
+        <li>Ketua Rohis UPJ 2023-2024</li>
       </ul>
     </div>
   </div>
-</nav>
 
-<div class="text-center">
-  <h1 class="main-heading">Halo, saya <span id="nama">Abdurrahman Hakim Makarim</span></h1>
-  <p id="biodata" class="lead mt-3">
-    Saya adalah mahasiswa Informatika di Universitas Pembangunan Jaya yang fokus di bidang IT support. Saya memiliki minat dalam membantu organisasi dengan infrastruktur teknis, menyelesaikan masalah, dan menyediakan solusi teknologi yang efisien. Dengan terus belajar dan mengasah keterampilan, saya berkomitmen memberikan solusi IT yang andal untuk mendukung operasional bisnis berjalan lancar.
-  </p>
-</div>
+  <div class="section" id="job">
+    <h2>Job</h2>
+    <div class="job-item">
+      <img src="foto_mahasiswa.png" alt="Foto Mahasiswa">
+      <p><strong>Pelajar/Mahasiswa</strong></p>
+      <p>Program Studi Informatika Universitas Pembangunan Jaya</p>
+    </div>
 
-<br>
-
-<div class="container mt-5" id="education">
-  <h1 class="text-center">Education</h1>
-  <div class="row justify-content-center mt-4">
-    <div class="col-md-8">
-      <div class="education-item">
-        <a href="https://sman4tangsel.sch.id/index.html" target="_blank"><h5 class="school-name">SMAN 4 KOTA TANGERANG SELATAN</h5></a>
-        <div class="education-details mt-2">
-          <p class="major">JURUSAN ILMU PENGETAHUAN ALAM</p>
-          <p class="years"><em>2020-2023</em></p>
-        </div>
-        <div class="experience mt-3">
-          <p class="experience_title"><b>EXPERIENCE</b></p>
-          <p class="experience_info">Menjabat sebagai anggota BPH di divisi sekretaris dalam Ekstrakurikuler Sinematografi Periode 2022-2023</p>
-        </div>
-      </div>
+    <div class="job-item">
+      <img src="foto_asisten_taekwondo.png" alt="Foto Asisten Pelatih">
+      <p><strong>Asisten Pelatih Terrace Taekwondo Sacti</strong></p>
+      <p>Sabuk Hitam Dan 1</p>
     </div>
   </div>
-  <hr id="line_split">
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <div class="education-item">
-        <a href="https://portal.upj.ac.id/" target="_blank"><h5 class="school-name">UNIVERSITAS PEMBANGUNAN JAYA</h5></a>
-        <div class="education-details mt-2">
-          <p class="major">PROGRAM STUDI INFORMATIKA</p>
-          <p class="years"><em>2023-2027</em></p>
-        </div>
-        <div class="experience mt-3">
-          <p class="experience_title"><b>EXPERIENCE</b></p>
-          <ul>
-            <li class="text-start">Menjabat sebagai anggota Asisten Laboratorium Program Studi Informatika</li>
-            <li class="text-start">Ketua Rohis UPJ 2023-2024</li>
-          </ul>
-        </div>
-      </div>
+
+  <div class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="skill-item">
+      <img src="bahasa_inggris.jpeg" alt="Bahasa Inggris">
+      <p><strong>Bahasa Inggris</strong></p>
+      <p>Menguasai Bahasa Inggris dengan pengalaman 4 tahun pendidikan, dan B2 English Level</p>
+    </div>
+
+    <div class="skill-item">
+      <img src="IT_support.png" alt="IT Support">
+      <p><strong>IT Support</strong></p>
+      <p>Saya berkeahlian dalam IT support, memastikan sistem komputer dan jaringan berfungsi optimal, memelihara perangkat keras dan perangkat lunak, serta menyelesaikan masalah teknis untuk meningkatkan efisiensi organisasi.</p>
     </div>
   </div>
-</div>
 
-<div class="container mt-5" id="job">
-  <h1 class="text-center">Job</h1>
-  <div class="row justify-content-center mt-4">
-    <div class="col-md-8">
-      <section id="about" class="container-fluid">
-        <div class="row justify-content-center fs-6">
-          <div class="col text-center">
-            <img class="img-fluid border mx-auto d-block" id="studentpic" src="foto_mahasiswa.png" alt="Foto Mahasiswa">
-            <p class="status mt-2">Pelajar/Mahasiswa</p>
-            <p>Program Studi Informatika Universitas Pembangunan Jaya</p>
-          </div>
-          <div class="col text-center">
-            <img class="img-fluid border mx-auto d-block" id="jobpic" src="foto_asisten_taekwondo.png" alt="Foto Asisten Pelatih">
-            <a href="https://www.instagram.com/terracetaekwondosacti/" target="_blank"><p class="status mt-2">Asisten Pelatih Terrace Taekwondo Sacti</p></a>
-            <p>Sabuk Hitam Dan 1</p>
-          </div>
-        </div>
-      </section>
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="contact-item">
+      <a href="https://www.instagram.com/abdrhakimm/" target="_blank">
+        <img src="instagram.jpeg" alt="Instagram">
+        <p><strong>INSTAGRAM</strong></p>
+      </a>
+      <p>@abdrhakimm</p>
     </div>
   </div>
-</div>
 
-<div class="container mt-5" id="skills">
-  <h1 class="text-center">Skills</h1>
-  <div class="row justify-content-center mt-4">
-    <div class="col-md-8">
-      <section id="skills" class="container-fluid">
-        <div class="row justify-content-center fs-6">
-          <div class="col text-center">
-            <img class="img-fluid border mx-auto d-block" id="english_language" src="bahasa_inggris.jpeg" alt="Bahasa Inggris">
-            <p class="status mt-2">Bahasa Inggris</p>
-            <p>Menguasai Bahasa Inggris dengan pengalaman 4 tahun pendidikan, dan B2 English Level</p>
-          </div>
-          <div class="col text-center">
-            <img class="img-fluid border mx-auto d-block" id="itsupport" src="IT_support.png" alt="IT Support">
-            <p class="status mt-2">IT Support</p>
-            <p>Saya berkeahlian dalam IT support, memastikan sistem komputer dan jaringan berfungsi optimal, memelihara perangkat keras dan perangkat lunak, serta menyelesaikan masalah teknis untuk meningkatkan efisiensi organisasi.</p>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
-</div>
+  <footer>
+    <p>©2024 Hakim</p>
+  </footer>
 
-<div class="container mt-5 mb-5" id="contact">
-  <h1 class="text-center">Contact</h1>
-  <div class="row justify-content-center mt-4">
-    <div class="col-md-8">
-      <section id="about" class="container-fluid">
-        <div class="row justify-content-center fs-6">
-          <div class="col text-center">
-            <a href="https://www.instagram.com/abdrhakimm/" target="_blank">
-              <img class="mx-auto d-block" id="studentpic" src="instagram.jpeg" alt="Instagram">
-              <p class="status mt-2">INSTAGRAM</p>
-            </a>
-            <p>@abdrhakimm</p>
-          </div>
-      </section>
-    </div>
-  </div>
-</div>
-
-<h6 class="text-center"><b>©2024 Hakim</b></h6>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#a2d9ff" fill-opacity="1" d="M0,160L80,176C160,192,320,224,480,218.7C640,213,800,171,960,154.7C1120,139,1280,149,1360,154.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-</svg>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-          </html>
+</html>
