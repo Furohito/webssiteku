@@ -13,7 +13,7 @@ body {
     padding-top: 70px;
 }
 
-/* Styling untuk navbar */
+/* Navbar styling */
 .navbar-brand {
     font-weight: 700;
     color: white;
@@ -35,6 +35,10 @@ body {
     color: #023e8a;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards; /* Animasi ketika masuk viewport */
 }
 
 #nama {
@@ -49,13 +53,22 @@ body {
     margin: 0 auto;
     color: #555;
     text-align: center;
+    margin-top: 20px;
 }
 
-/* Styling untuk kartu (cards) */
+/* Section */
+.section {
+    padding: 60px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.2s ease-out forwards; /* Animasi */
+}
+
 .card {
     border: none;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadow lembut untuk card */
+    margin-bottom: 20px; /* Margin antar card */
 }
 
 .card-title {
@@ -77,7 +90,7 @@ body {
 }
 
 .img-fluid:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Efek hover untuk gambar */
 }
 
 /* Section titles */
@@ -86,6 +99,10 @@ h2 {
     color: #023e8a;
     margin-bottom: 30px;
     font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards; /* Animasi judul section */
 }
 
 /* Footer styling */
@@ -97,54 +114,82 @@ footer {
     margin-top: 40px;
 }
 
-/* Section padding */
-.section {
-    padding: 60px 0;
+/* Experience list style */
+ul {
+    padding-left: 20px;
 }
 
-/* Media Queries untuk Responsivitas */
+ul li {
+    list-style-type: disc;
+    color: #555;
+}
 
-/* Tablet dan lebih besar */
+/* Animasi Fade In Up */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Padding Adjustment */
 @media (max-width: 768px) {
-    .main-heading {
-        font-size: 2rem;
-    }
-
-    .lead {
-        font-size: 1.1rem;
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 14px;
+    .section {
+        padding: 40px 0; /* Mengurangi padding untuk tablet dan layar kecil */
     }
 
     .card-title {
         font-size: 1.3rem;
     }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
 }
 
-/* Smartphone */
+/* Smartphone Adjustments */
 @media (max-width: 576px) {
-    .main-heading {
-        font-size: 1.8rem;
-    }
-
-    .lead {
-        font-size: 1rem;
-        padding: 0 20px;
+    .section {
+        padding: 30px 0; /* Mengurangi padding lebih banyak untuk layar kecil */
     }
 
     .card-title {
         font-size: 1.2rem;
     }
 
-    /* Mengurangi padding untuk membuat layout lebih kompak */
-    .section {
-        padding: 40px 0;
+    .card-text {
+        font-size: 0.9rem;
     }
 
     .img-fluid {
-        width: 90%;
+        width: 90%; /* Membuat gambar lebih kecil dan tetap responsif di layar kecil */
         margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Specific adjustments for better readability on smaller screens */
+@media (max-width: 576px) {
+    .navbar-nav {
+        text-align: center; /* Center-align navbar items on mobile */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .navbar-brand {
+        font-size: 18px; /* Smaller brand size */
+    }
+
+    .lead {
+        font-size: 1rem;
     }
 }
