@@ -1,196 +1,259 @@
-/* External CSS file: styles.css */
-
-/* Background color untuk navbar dan footer */
+/* Warna latar belakang untuk navbar */
 .bg-light-blue {
     background-color: #00B4D8;
 }
 
-/* Styling umum untuk body */
+/* Gaya umum untuk body */
 body {
     font-family: 'Montserrat', sans-serif;
     color: #333;
-    background-color: #f9f9f9;
+    min-height: 100vh;
     padding-top: 70px;
+    margin: 0;
 }
 
-/* Navbar styling */
-.navbar-brand {
-    font-weight: 700;
-    color: white;
-}
-
-.navbar-nav .nav-link {
-    color: white;
+/* Gaya untuk link di navbar */
+.navbar-light .navbar-nav .nav-link {
     font-weight: 400;
-    padding: 0 15px;
+    font-size: 16px;
+    color: #ffffff;
+    padding-right: 20px;
+    transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-light .navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
     color: #90e0ef;
 }
 
-/* Heading utama */
+/* Gaya untuk heading utama */
 .main-heading {
-    font-size: 2.5rem;
-    color: #023e8a;
     font-weight: 700;
-    margin-bottom: 1.5rem;
-    margin-top: 3rem;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease-out forwards; /* Animasi ketika masuk viewport */
+    font-size: 4rem;
+    color: #023e8a;
+    margin-bottom: 2rem;
+    margin-top: -7.5rem;
 }
 
+/* Penyesuaian margin-top heading untuk perangkat yang lebih kecil */
+@media (max-width: 992px) {
+    .main-heading {
+        font-size: 3rem;
+        margin-top: -6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 2.5rem;
+        margin-top: -4.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-heading {
+        font-size: 2rem;
+        margin-top: -3rem;
+    }
+}
+
+/* Warna untuk nama */
 #nama {
     color: #0096c7;
 }
 
-/* Styling untuk teks perkenalan */
+/* Gaya untuk teks lead */
 .lead {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 300;
-    max-width: 800px;
+    color: #333;
+    max-width: 700px;
     margin: 0 auto;
-    color: #555;
-    text-align: center;
-    margin-top: 20px;
+    padding: 0 15px;
 }
 
-/* Section */
-.section {
-    padding: 60px 0;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 1.2s ease-out forwards; /* Animasi */
-}
-
-.card {
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadow lembut untuk card */
-    margin-bottom: 20px; /* Margin antar card */
-}
-
-.card-title {
-    font-size: 1.5rem;
-    color: #023e8a;
-    font-weight: 600;
-}
-
-.card-text {
+#biodata {
+    text-align: justify;
     font-size: 1rem;
-    color: #555;
+    line-height: 1.6;
 }
 
-/* Responsive images */
-.img-fluid {
+@media (max-width: 576px) {
+    #biodata {
+        font-size: 0.9rem;
+    }
+}
+
+/* Menghapus padding khusus pada .container untuk mengikuti Bootstrap */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Gaya untuk section */
+section {
+    padding: 60px 0;
+}
+
+/* Gaya untuk footer */
+footer {
+    background-color: #023e8a;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Gaya untuk tombol */
+.btn-primary {
+    background-color: #00B4D8;
+    border-color: #00B4D8;
+}
+
+.btn-primary:hover {
+    background-color: #0096c7;
+    border-color: #0096c7;
+}
+
+/* Gaya untuk item pendidikan */
+.education-item {
+    margin-bottom: 2rem;
+}
+
+.school-name {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.education-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-details p {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    .education-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Gaya untuk judul pengalaman */
+.experience_title {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Garis pemisah */
+#line_split {
+    padding-bottom: 1rem;
+    margin-top: -1rem;
+}
+
+/* Gaya untuk SVG */
+.svg_1 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -100px;
+}
+
+/* Gaya untuk logo */
+#logo {
+    margin-right: 1rem;
+}
+
+/* Gaya untuk gambar agar responsif */
+#studentpic,
+#jobpic,
+#english_language,
+#itsupport,
+#instagram {
+    display: block;
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
     transition: transform 0.3s ease;
+    width: 10rem;
 }
 
-.img-fluid:hover {
-    transform: scale(1.05); /* Efek hover untuk gambar */
+@media (max-width: 576px) {
+    #studentpic,
+    #jobpic,
+    #english_language,
+    #itsupport,
+    #instagram {
+        width: 8rem;
+    }
 }
 
-/* Section titles */
-h2 {
-    font-size: 2rem;
-    color: #023e8a;
-    margin-bottom: 30px;
+#studentpic:hover,
+#jobpic:hover,
+#english_language:hover,
+#itsupport:hover,
+#instagram:hover {
+    transform: scale(1.05);
+}
+
+/* Gaya untuk status */
+.status {
     font-weight: bold;
+}
+
+/* Scroll margin untuk navigasi anchor */
+#education,
+#job,
+#contact,
+#skills {
+    scroll-margin-top: 110px;
+    scroll-margin-bottom: 100px;
+}
+
+/* Gaya untuk link */
+a {
+    text-decoration: none;
+    color: #111111;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Margin bawah untuk kolom di bagian skills */
+#skills .col {
+    margin-bottom: 2rem;
+}
+
+/* Penyesuaian untuk #itsupport */
+#itsupport-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 1s ease-out forwards; /* Animasi judul section */
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-/* Footer styling */
-footer {
-    background-color: #00B4D8;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-/* Experience list style */
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    list-style-type: disc;
-    color: #555;
-}
-
-/* Animasi Fade In Up */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Section Padding Adjustment */
-@media (max-width: 768px) {
-    .section {
-        padding: 40px 0; /* Mengurangi padding untuk tablet dan layar kecil */
-    }
-
-    .card-title {
-        font-size: 1.3rem;
-    }
-
-    .card-text {
-        font-size: 0.9rem;
-    }
-}
-
-/* Smartphone Adjustments */
 @media (max-width: 576px) {
-    .section {
-        padding: 30px 0; /* Mengurangi padding lebih banyak untuk layar kecil */
-    }
-
-    .card-title {
-        font-size: 1.2rem;
-    }
-
-    .card-text {
-        font-size: 0.9rem;
-    }
-
-    .img-fluid {
-        width: 90%; /* Membuat gambar lebih kecil dan tetap responsif di layar kecil */
-        margin: 0 auto;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-}
-
-/* Specific adjustments for better readability on smaller screens */
-@media (max-width: 576px) {
-    .navbar-nav {
-        text-align: center; /* Center-align navbar items on mobile */
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 14px; /* Smaller font size for mobile */
-    }
-
-    .navbar-brand {
-        font-size: 18px; /* Smaller brand size */
-    }
-
-    .lead {
-        font-size: 1rem;
+    #itsupport-container {
+        width: 100%;
     }
 }
